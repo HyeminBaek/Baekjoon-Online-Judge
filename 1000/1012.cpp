@@ -50,7 +50,7 @@ int main()
 
 		cin >> m >> n >> k;
 
-		for (int j = 0; j < k; j++) //¹èÃß ÀÔ·Â
+		for (int j = 0; j < k; j++) //Â¹Ã¨ÃƒÃŸ Ã€Ã”Â·Ã‚
 		{
 			int x; int y;
 			cin >> x >> y;
@@ -67,7 +67,6 @@ int main()
 					bfs(a,b);
 			}
 		}
-
 		cout << earthworm << "\n";
 	}
 
