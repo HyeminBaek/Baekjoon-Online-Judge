@@ -3,13 +3,13 @@
 #include <cstring>
 using namespace std;
 
-int A, B; //ºÎ¸ğ ³ëµå Ã£¾Æ¾ß ÇÒ ¸»´Ü ³ëµå
+int A, B; //ë¶€ëª¨ ë…¸ë“œ ì°¾ì•„ì•¼ í•  ë§ë‹¨ ë…¸ë“œ
 vector<int> AParent;
 vector<int> BParent;
 vector<int> v[10001];
 bool visited[10001];
 
-void dfs(int x, bool AorB)//AÀÏ°æ¿ì 0,AParent¿¡ ÀúÀå
+void dfs(int x, bool AorB)//Aì¼ê²½ìš° 0,AParentì— ì €ì¥
 {
 	if (!AorB) AParent.push_back(x);
 	else BParent.push_back(x);
@@ -64,6 +64,5 @@ int main()
 
 		cout << find() << endl;
 	}
-
 	return 0;
 }
