@@ -11,7 +11,7 @@ int dp[500][500];
 int dfs(int x, int y)
 {
 	int& temp = dp[x][y];
-	if (temp != -1) return temp; //�̹� �湮�� ���
+	if (temp != -1) return temp; //ÀÌ¹Ì ¹æ¹®ÇÑ °æ¿ì
 	if (x == N - 1 && y == M - 1) return 1;
 
 	temp = 0;
@@ -38,7 +38,6 @@ int main()
 		for (int j = 0; j < M; j++)
 			cin >> map[i][j];
 	}
-
 	memset(dp, -1, sizeof(dp));
 	cout << dfs(0,0);
 
