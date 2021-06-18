@@ -56,6 +56,5 @@ int main()
 		if (v.empty() || v.back().empty()) cout << "-1\n";
 		else cout << v.back().back() << "\n";
 	}
-
 	return 0;
 }
