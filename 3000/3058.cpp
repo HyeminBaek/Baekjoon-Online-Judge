@@ -30,6 +30,5 @@ int min(int arr[], int SIZE)
 	int answer = arr[0];
 	for (int i = 1; i < SIZE; i++)
 		answer = (answer > arr[i]) ? arr[i] : answer;
-
 	return answer;
 }
