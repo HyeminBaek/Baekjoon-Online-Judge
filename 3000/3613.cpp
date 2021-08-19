@@ -55,8 +55,7 @@ int main()
 		cout << "Error!";
 	else if (flag == -1)
 		cout << s;
-	else
-		cout << answer;
+	else	cout << answer;
 
 	return 0;
 }
