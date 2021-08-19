@@ -31,7 +31,7 @@ int main()
 	{
 		if (s[i] == 'A') cout << a << " ";
 		else if (s[i] == 'B') cout << b << " ";
-		else cout << c << " ";
+		else    cout << c << " ";
 	}
 
 	return 0;
