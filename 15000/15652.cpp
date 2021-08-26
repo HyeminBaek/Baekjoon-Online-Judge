@@ -22,5 +22,6 @@ int main()
 	int M, N; cin >> M >> N;
 	for (int i = 1; i <= M; i++)
 		back(to_string(i), 1, M, N);
+	
 	return 0;
 }
