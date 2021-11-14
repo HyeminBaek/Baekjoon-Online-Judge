@@ -15,36 +15,7 @@ abs 값은 -37이 더 큰데? 문제가 잘못 된건가?
 */
 int M;
 vector<int> v;
-/* 1st try
-struct compare 
-{
-	bool oper(int& f)
-	{
-		return abs(f) < cur;
-	}
-};
 
-priority_queue<int, vector<int>, compare> pq;
-
-void solution()
-{
-	int ans = 0;
-	while (!pq.empty())
-	{
-		int prev = 0;
-		for (int i = 0;i < M;i++)
-		{
-			if (pq.empty()) break;
-			int cur = pq.top(); pq.pop();
-			ans += abs(cur-prev);
-			prev = cur;
-		}
-		if(!pq.empty()) ans += abs(prev);
-	}
-
-	cout << ans;
-}
-*/
 void solution()
 {
 	int ans = 0, tmp = (abs(v[0]) > abs(v.back())) ? abs(v[0]) : abs(v.back());
